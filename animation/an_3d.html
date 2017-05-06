@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Shannon Moquin's Portfolio
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="../main.css" />
+		<link rel="stylesheet" type="text/css" href="../main02.css" />
+		<link rel="stylesheet" type="text/css" href="3d.css" />
+	</head>
+	
+	<body>
+		
+		<div id="entirePage">
+		
+		<!-- Banners -->
+		
+			<div id="banner">
+				<img src="../assets/banner.png" alt="Banner" class="banner-image" />
+				<hr class="banner-line" />
+				<a href="../index.html"><img src="../assets/logo.png" alt="Logo" class="banner-logo" /></a>
+			</div>
+			
+		<!-- Navigation links -->
+		
+			<nav>
+				<ul>
+					<li><a href="../arthome.html">Art</a></li>
+					<li><a href="../animationhome.html">Animation</a></li>
+					<li><a href="../courseworks.html">Course-Works</a></li>
+					<li><a href="../aboutme.html">About-Me</a></li>
+				</ul>
+			</nav>
+			
+			<div id="galleryOverall">
+			
+			<div id="catNav">
+				<ul>
+					<li><a href="an_2d.html">2D</a></li>
+					<li>3D</li>
+				</ul>
+			</div>
+			
+			<!-- Gallery -->
+			
+				<div class="gallery">
+					<div class="tble">
+						<div class="tbleR">
+							<div class="tbleC">
+								<div class="videoContent">
+									<video width="400" controls>
+										<source src="assets/3d/3d.mp4" type="video/mp4">
+										Your browser is not cool enough to see this HTML5 Vid! Update to see it!
+									</video>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div>
+				<img src="../assets/h_border.png" alt="border" class="h_border" />
+			</div>
+			
+			<!-- Footer -->
+			
+			
+			<footer>
+				<p>Updated: 05/06/2017</p>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../arthome.html">Art</a></li>
+					<li><a href="../animationhome.html">Animation</a></li>
+					<li><a href="../courseworks.html">Course-Works</a></li>
+					<li><a href="../aboutme.html">About-Me</a></li>
+				</ul>
+				<p>Created by Shannon Moquin</p>
+			</footer>
+			
+		</div>
+		<script>
+		var colors = ['#f9feff', '#faf4ff', '#f9fff9'];
+
+			var changeBackground = function() {
+				document.body.style.background = colors[Math.floor(Math.random()*colors.length)];
+			};
+
+		changeBackground();
+		</script>
+	</body>
+
+</html>

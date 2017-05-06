@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>
+			Shannon Moquin's Portfolio - Course Works
+		</title>
+		
+		<!-- Main CSS is to all pages, home CSS is to the home page only -->
+		<link rel="stylesheet" type="text/css" href="mainBackup.css" />
+		<link rel="stylesheet" type="text/css" href="main02.css" />
+		<link rel="stylesheet" type="text/css" href="aboutme.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="entirePage">
+		
+			<div id="banner">
+				<img src="assets/banner.png" alt="Banner" class="banner-image" />
+				<hr class="banner-line" />
+				<a href="index.html"><img src="assets/logo.png" alt="Logo" class="banner-logo" /></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="arthome.html">Art</a></li>
+					<li><a href="animationhome.html">Animation</a></li>
+					<li><a href="courseworks.html">Course-Works</a></li>
+					<li>About-Me</li>
+				</ul>
+			</nav>
+			
+			<div id="bottomContent">
+				
+				<div id="myImage">
+					<img src="aboutme/assets/myImage.jpg" alt="Selfie" id="selfie" />
+				</div>
+				
+				<article>
+					
+					<header>
+						<h2>Hello! My name is Shannon Moquin!</h2>
+					</header>
+					
+					<p>I am a 23 year old female college student in Salt Lake Community College.
+					I am currently going for my Associate's Degree in Visual Art and Design: Animation Emphasis.
+					I am a visual artist who loves to express stories from animation and cartoon drawings.
+					I am always looking for different styles of art that is appealing to how I feel currently.
+					This also gives me the opportunity to discover my own personal art drawing style.
+					I already feel accomplished with how unique I can make my cartoons, but I would love to improve more on them, make them more "alive".
+					</p>
+					<p>I used to write stories, but I have a comprehension disorder that makes it harder for me to take in information as well as express it.
+					So that means I can't really multi-task well. 
+					Plus I feel like writing is not my style of story expression, especially since I can't explain in detail of what scenes are going on.
+					I also feel as though my writing style is souly based off of how I speak, and because I can't speak fluently, my writing doesn't look clean.
+					At least my essays are better looking, which is a plus for the professional side of my life.
+					</p>
+					<p>If you want to plan a commission with me, you may contact me through my email since it is easier for me to get to you with my busy schedule:</p>
+					<p id="email"><a href="mailto:kitsune1fox@gmail.com">My email account</a></p>
+					
+					
+				</article>
+				
+				
+				
+			</div>
+		
+		</div>
+		
+		<div>
+				<img src="assets/h_border.png" alt="border" class="h_border" />
+			</div>
+			
+			<footer>
+				<p>Updated: 05/06/2017</p>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="arthome.html">Art</a></li>
+					<li><a href="animationhome.html">Animation</a></li>
+					<li><a href="courseworks.html">Course-Works</a></li>
+					<li><a href="aboutme.html">About-Me</a></li>
+				</ul>
+				<p>Created by Shannon Moquin</p>
+			</footer>
+		<script>
+		var colors = ['#f9feff', '#faf4ff', '#f9fff9'];
+
+			var changeBackground = function() {
+				document.body.style.background = colors[Math.floor(Math.random()*colors.length)];
+			};
+
+		changeBackground();
+		</script>
+	
+	</body>
+	
+</html>

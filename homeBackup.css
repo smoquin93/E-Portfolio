@@ -1,0 +1,174 @@
+#entirePage {
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 1326px;
+	height: 600px;
+	margin: 0 auto;
+	/*border: 2px solid black;*/
+}
+
+.nav-holder {
+	display: block;
+	z-index: -1;
+	background-color: #b9c6ad;
+	height: 105px;
+	width: 1360px;
+	position: relative;
+	top: 50px;
+}
+
+/* --------Left Panel of the page---------- */
+
+#recentWorksPanel {
+	float: left;
+	/*border: 2px solid black;*/
+	position: relative;
+	top: 200px;
+	width: 600px;
+}
+
+.workTitle {
+	font-size: 36px;
+	color: #81ab8f;
+	text-align: center;
+}
+
+.images {
+	
+}
+
+/* ---------- Images of Artwork -----------*/
+
+#imageWorks {
+	width: 220px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+.slot1 {
+	position: relative;
+	left: 20px;
+}
+
+.slot2 {
+	position: relative;
+	top: -305.5px;
+	left: 260px;
+}
+
+.slot3 {
+	position: relative;
+	top: -294.5px;
+	left: 130px;
+}
+
+.slot4 {
+	position: relative;
+	top: -600px;
+	left: 370px;
+}
+
+
+/* --------- End of Images --------- */
+
+.v_border {
+	position: relative;
+	top: 200px;
+	/*left: 250px;*/
+}
+
+/* --------- Right Panel of the Page, the "Menu" ----------*/
+
+#menu{
+	position: relative;
+	top: -450px;
+	left: -300px;
+	float: right;
+	color: #81ab8f;
+	font-size: 30px;
+	transition: 0.4s ease;
+	/*border: 2px solid black;*/
+}
+
+#menu li a:link {
+	text-decoration: none;
+	color: #868686;
+}
+
+#menu li a:visited {
+	color: #868686;
+}
+
+#menu li a:hover {
+	color: white;
+	background-color: #868686;
+}
+
+#menu li a:active {
+	color: #868686;
+}
+
+ul {
+	list-style: none;
+}
+
+/* -------- Social Media Accounts ---------- */
+
+#accounts {
+	margin: 0 auto;
+	padding: 3px;
+	position: relative;
+	left: 90px;
+}
+
+.deviantart, .pinterest {
+	width: 40px;
+	height: 40px;
+}
+
+
+/* ---------- Footer Content ---------- */
+
+.h_border {
+	position: relative;
+	top: -100px;
+	left: -300px;
+}
+
+/* -------- Footer --------- */
+
+footer {
+	position: relative;
+	top: -100px;
+	left: 00px;
+	text-align: center;
+	color: #666;
+	font-size: 20px;
+}
+
+footer ul {
+	word-spacing: 50px;
+}
+
+footer li {
+	display: inline;
+}
+
+footer li a:link {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:visited {
+	text-decoration: none;
+	color: #868686;
+}
+	
+footer li a:hover {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:active {
+	text-decoration: none;
+	color: #868686;
+}

@@ -1,0 +1,68 @@
+#entirePage {
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0 auto;
+}
+
+/* ------- Bottom Content --------- */
+
+#bottomContent {
+	display: block;
+	background-color: #666666;
+	position: relative;
+	top: 150px;
+}
+
+/* ----- Icon ----- */
+
+#myImage {
+	float: left;
+	/*border: 1px solid black;*/
+	position: relative;
+	left: 50px;
+}
+
+#selfie {
+	width: 300px;
+	height: auto;
+	border-radius: 10%;
+	
+}
+
+/* ---- Description ---- */
+
+article {
+	display: block;
+	float: right;
+	width: 900px;
+	background-color: #bce2bd;
+	border-radius: 5%;
+	padding: 2px;
+}
+
+#email a:link {
+	text-shadow: 2px 2px black;
+	text-decoration: none;
+	color: white;
+	opacity: 0.8;
+}
+
+#email a:active {
+	color: white;
+}
+
+#email a:hover {
+	color: white;
+}
+
+/* ------- Footer ------- */
+
+.h_border {
+	position: relative;
+	top: 300px;
+	left: 400px;
+}
+
+footer {
+	top: 300px;
+	left: 0px;
+}

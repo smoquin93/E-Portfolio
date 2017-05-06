@@ -1,0 +1,86 @@
+#entirePage {
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 1326px;
+	margin: 0 auto;
+	/*border: 2px solid black;*/
+	spacing-bottom: 20px;
+}
+
+/* ----------Navigation Bar -------- */
+nav {
+	position: relative;
+	top: 65px;
+	display: block;
+	background-color: #b9c6ad;
+	height: 105px;
+	width: 1360px;
+}
+
+nav ul {
+	position: absolute;
+	top: 10px;
+	left: 220px;
+	color: #eee;
+	font-size: 30px;
+	word-spacing: 140px;
+}
+
+nav ul li {
+	display: inline;
+	list-style: none;
+}
+
+nav a:link {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	color: #c9d7be;
+}
+
+nav a:visited {
+	color: white;
+}
+
+nav a:active {
+	color: white;
+}
+
+
+/* -------- Footer --------- */
+
+footer {
+	position: relative;
+	text-align: center;
+	color: #666;
+	font-size: 20px;
+}
+
+footer ul {
+	word-spacing: 50px;
+}
+
+footer li {
+	display: inline;
+}
+
+footer li a:link {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:visited {
+	text-decoration: none;
+	color: #868686;
+}
+	
+footer li a:hover {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:active {
+	text-decoration: none;
+	color: #868686;
+}

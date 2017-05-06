@@ -1,0 +1,164 @@
+.nav-holder {
+	position: absolute;
+	top: 560px;
+	left: 8px;
+	display: block;
+	z-index: -10;
+	background-color: #b9c6ad;
+	height: 105px;
+	width: 1330px;
+}
+
+/* --------Left Panel of the page---------- */
+
+#recentWorksPanel {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 50px;
+	top: 200px;
+	text-align: center;
+	/*border: 2px solid black;*/
+}
+
+.workTitle {
+	font-size: 36px;
+	color: #81ab8f;
+}
+
+.images {
+	
+}
+
+/* ---------- Images of Artwork -----------*/
+
+#imageWorks {
+	width: 160px;
+	height: 170px;
+}
+
+.slot1{
+	position: relative;
+	left: -138px;
+	top: 0px;
+}
+
+.slot2 {
+	position: relative;
+	left: 30px;
+	top: -174px;
+}
+
+.slot3 {
+	position: relative;
+	left: -30px;
+	top: -167px;
+}
+
+.slot4 {
+	position: relative;
+	left: 140px;
+	top: -341px;
+}
+
+/* --------- End of Images --------- */
+
+.v_border {
+	position: relative;
+	left: 550px;
+	top: -400px;
+}
+
+/* --------- Right Panel of the Page, the "Menu" ----------*/
+
+#menu{
+	position: relative;
+	left: 750px;
+	top: -1100px;
+	color: #81ab8f;
+	font-size: 30px;
+}
+
+#menu li a:link {
+	text-decoration: none;
+	color: #868686;
+}
+
+#menu li a:visited {
+	color: #868686;
+}
+
+#menu li a:hover {
+	color: white;
+	background-color: #868686;
+}
+
+#menu li a:active {
+	color: #868686;
+}
+
+ul {
+	list-style: none;
+}
+
+/* -------- Social Media Accounts ---------- */
+
+#accounts {
+	margin: auto;
+	padding: 3px;
+	position: relative;
+	left: 90px;
+}
+
+.deviantart, .pinterest {
+	width: 40px;
+	height: 40px;
+}
+
+
+/* ---------- Footer Content ---------- */
+
+.h_border {
+	position: absolute;
+	top: 1350px;
+	left: 270px;
+}
+
+/* -------- Footer --------- */
+
+footer {
+	position: absolute;
+	top: 1450px;
+	left: 270px;
+	text-align: center;
+	color: #666;
+	font-size: 20px;
+}
+
+footer ul {
+	word-spacing: 50px;
+}
+
+footer li {
+	display: inline;
+}
+
+footer li a:link {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:visited {
+	text-decoration: none;
+	color: #868686;
+}
+	
+footer li a:hover {
+	text-decoration: none;
+	color: #868686;
+}
+
+footer li a:active {
+	text-decoration: none;
+	color: #868686;
+}

@@ -1,0 +1,30 @@
+
+/* ---------Banner------------ */
+
+#banner {
+	width: 1360px;
+	height: 500px;
+}
+
+.banner-image {
+	margin: auto;
+	width: 1360px;
+	height: 585px;
+	z-index: -10;
+}
+
+.banner-line {
+	margin: auto;
+	border: 5px solid #b9c6ad;
+	position: absolute;
+	width: 100%;
+	top: -200px;
+	z-index: -1;
+}
+
+.banner-logo {
+	position: relative;
+	top: -150px;
+	left: 0px;
+	z-index: 2;
+}
