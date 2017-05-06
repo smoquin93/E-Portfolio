@@ -1,3 +1,21 @@
+h1 {
+	width: 1300px;
+	text-align: center;
+	position: relative;
+	color: #449944;
+	text-shadow: 2px 2px 2px #666;
+}
+
+.pdfFile {
+	position: relative;
+	top: 100px;
+	left: 200px;
+}
+
+.fileAttach {
+	box-shadow: #b9c6ad;
+}
+
 .h_border {
 	position: relative;
 	top: 230px;
