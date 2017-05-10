@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="../main02.css" />
 		<link rel="stylesheet" type="text/css" href="a_galleryBasic.css" />
 		<link rel="stylesheet" type="text/css" href="charcoal.css" />
+		<link rel="stylesheet" type="text/css" href="mainGallery.css" />
 	</head>
 	
 	<body>
@@ -56,38 +57,77 @@
 					<div class="tble">
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/charcoal/clothonhanger.png" alt="Cloth On Hanger" class="galleryImages" />
+								<img src="assets/charcoal/clothonhanger.png" alt="Cloth On Hanger" class="galleryImages" onclick="openModal();currentSlide(1)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/charcoal/clothOnObject.png" alt="Cloth On Object" class="galleryImages" />
+								<img src="assets/charcoal/clothOnObject.png" alt="Cloth On Object" class="galleryImages" onclick="openModal();currentSlide(2)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/charcoal/footStatue.png" alt="Foot Statue" class="galleryImages" />
+								<img src="assets/charcoal/footStatue.png" alt="Foot Statue" class="galleryImages" onclick="openModal();currentSlide(3)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/charcoal/womanModel.jpg" alt="Woman Model Face" class="galleryImages" />
+								<img src="assets/charcoal/womanModel.jpg" alt="Woman Model Face" class="galleryImages" onclick="openModal();currentSlide(4)" />
 							</div>
 						</div>
 						
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/charcoal/womanModel02.jpg" alt="Woman Model Figure Drawing" class="galleryImages" />
+								<img src="assets/charcoal/womanModel02.jpg" alt="Woman Model Figure Drawing" class="galleryImages" onclick="openModal();currentSlide(5)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/charcoal/womanTorsoStatue.png" alt="Woman Torso Statue" class="galleryImages" />
+								<img src="assets/charcoal/womanTorsoStatue.png" alt="Woman Torso Statue" class="galleryImages" onclick="openModal();currentSlide(6)" />
 							</div>
 							
-							<div class="tbleC">
-								<img src="assets/comingsoon.png" alt="Coming Soon" class="galleryImages" />
+						</div>
+						
+					</div>
+					
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+							<div class="mySlides">
+							  <div class="numbertext">1 / 6</div>
+								<img src="assets/charcoal/clothonhanger.png" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+							  <div class="numbertext">2 / 6</div>
+								<img src="assets/charcoal/clothOnObject.png" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+							  <div class="numbertext">3 / 6</div>
+								<img src="assets/charcoal/footStatue.png" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+							  <div class="numbertext">4 / 6</div>
+								<img src="assets/charcoal/womanModel.jpg" style="width:100%">
 							</div>
 							
-							<div class="tbleC">
-								<img src="assets/comingsoon.png" alt="Coming Soon" class="galleryImages" />
+							<div class="mySlides">
+							  <div class="numbertext">5 / 6</div>
+								<img src="assets/charcoal/womanModel02.jpg" style="width:100%">
 							</div>
+							
+							<div class="mySlides">
+							  <div class="numbertext">6 / 6</div>
+								<img src="assets/charcoal/womanTorsoStatue.png" style="width:100%">
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+							  <p id="caption"></p>
+							</div>
+
+							
 						</div>
 					</div>
 				</div>
@@ -122,6 +162,43 @@
 			};
 
 		changeBackground();
+		
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
 		</script>
 	</body>
 

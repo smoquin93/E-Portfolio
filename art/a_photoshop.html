@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="../main02.css" />
 		<link rel="stylesheet" type="text/css" href="a_galleryBasic.css" />
 		<link rel="stylesheet" type="text/css" href="photoshop.css" />
+		<link rel="stylesheet" type="text/css" href="mainGallery.css" />
 	</head>
 	
 	<body>
@@ -56,21 +57,48 @@
 					<div class="tble">
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/photoshop/NightmareShield.png" alt="Nightmare on 13th 25th Anniv" class="galleryImages" />
+								<img src="assets/photoshop/NightmareShield.png" alt="Nightmare on 13th 25th Anniv" class="galleryImages" onclick="openModal();currentSlide(1)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/photoshop/IcyGlare.jpg" alt="Icy Glare" class="galleryImages" />
+								<img src="assets/photoshop/IcyGlare.jpg" alt="Icy Glare" class="galleryImages" onclick="openModal();currentSlide(2)" />
 							</div>
 								
 							<div class="tbleC">
-								<img src="assets/photoshop/TechnoEye.png" alt="Techno Eye" class="galleryImages" />
+								<img src="assets/photoshop/TechnoEye.png" alt="Techno Eye" class="galleryImages" onclick="openModal();currentSlide(3)" />
 							</div>
 							
-							<div class="tbleC">
-								<img src="assets/comingsoon.png" alt="Coming Soon" class="galleryImages" />
-							</div>
 						</div>
+					</div>
+					
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+							<div class="mySlides">
+							  <div class="numbertext">1 / 3</div>
+								<img src="assets/photoshop/NightmareShield.png" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+							  <div class="numbertext">2 / 3</div>
+								<img src="assets/photoshop/IcyGlare.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+							  <div class="numbertext">3 / 3</div>
+								<img src="assets/photoshop/TechnoEye.png" style="width:100%">
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+							  <p id="caption"></p>
+							</div>
+
+							
+							</div>
 					</div>
 				</div>
 			
@@ -104,6 +132,43 @@
 			};
 
 		changeBackground();
+		
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
 		</script>
 	</body>
 

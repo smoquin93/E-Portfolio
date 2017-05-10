@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="../main02.css" />
 		<link rel="stylesheet" type="text/css" href="a_galleryBasic.css" />
 		<link rel="stylesheet" type="text/css" href="sketch.css" />
+		<link rel="stylesheet" type="text/css" href="mainGallery.css" />
 	</head>
 	
 	<body>
@@ -56,75 +57,160 @@
 					<div class="tble">
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/sketch/godOfStars.jpg" alt="God of Stars" class="galleryImages" />
+								<img src="assets/sketch/godOfStars.jpg" alt="God of Stars" class="galleryImages" onclick="openModal();currentSlide(1)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/godOfStones.jpg" alt="God Of Stones" class="galleryImages" />
+								<img src="assets/sketch/godOfStones.jpg" alt="God Of Stones" class="galleryImages" onclick="openModal();currentSlide(2)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20160718_020549.jpg" alt="God Of Sun" class="galleryImages" />
+								<img src="assets/sketch/IMG_20160718_020549.jpg" alt="God Of Sun" class="galleryImages" onclick="openModal();currentSlide(3)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20160718_021118.jpg" alt="Suna Action Pose" class="galleryImages" />
+								<img src="assets/sketch/IMG_20160718_021118.jpg" alt="Suna Action Pose" class="galleryImages" onclick="openModal();currentSlide(4)" />
 							</div>
 						</div>
 						
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20160811_125921.jpg" alt="God of Stones' Power" class="galleryImages" />
+								<img src="assets/sketch/IMG_20160811_125921.jpg" alt="God of Stones' Power" class="galleryImages" onclick="openModal();currentSlide(5)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170418_032122.jpg" alt="Maiden's Lost Hope" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170418_032122.jpg" alt="Maiden's Lost Hope" class="galleryImages" onclick="openModal();currentSlide(6)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152550.jpg" alt="Lady of Roses" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152550.jpg" alt="Lady of Roses" class="galleryImages" onclick="openModal();currentSlide(7)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152701.jpg" alt="Personas" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152701.jpg" alt="Personas" class="galleryImages" onclick="openModal();currentSlide(8)" />
 							</div>
 						</div>
 						
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152714.jpg" alt="Watcher Of the Sea" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152714.jpg" alt="Watcher Of the Sea" class="galleryImages" onclick="openModal();currentSlide(9)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152739.jpg" alt="Missing Love" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152739.jpg" alt="Missing Love" class="galleryImages" onclick="openModal();currentSlide(10)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152752.jpg" alt="Sketch01" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152752.jpg" alt="Sketch01" class="galleryImages" onclick="openModal();currentSlide(11)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152853.jpg" alt="Mango Outline Test" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152853.jpg" alt="Mango Outline Test" class="galleryImages" onclick="openModal();currentSlide(12)" />
 							</div>
 						</div>
 						
 						<div class="tbleR">
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152912.jpg" alt="Beautiful Alien" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152912.jpg" alt="Beautiful Alien" class="galleryImages" onclick="openModal();currentSlide(13)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_152941.jpg" alt="Lady Death" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_152941.jpg" alt="Lady Death" class="galleryImages" onclick="openModal();currentSlide(14)" />
 							</div>
 							
 							<div class="tbleC">
-								<img src="assets/sketch/IMG_20170506_153223.jpg" alt="Sketch02" class="galleryImages" />
+								<img src="assets/sketch/IMG_20170506_153223.jpg" alt="Sketch02" class="galleryImages" onclick="openModal();currentSlide(15)" />
 							</div>
 							
-							<div class="tbleC">
-								<img src="assets/comingsoon.png" alt="Coming Soon!" class="galleryImages" />
-							</div>
 						</div>
+					</div>
+					
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+							
+								<div class="mySlides">
+									<div class="numbertext">1 / 15</div>
+											<img src="assets/sketch/godOfStars.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">2 / 15</div>
+											<img src="assets/sketch/godOfStones.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">3 / 15</div>
+											<img src="assets/sketch/IMG_20160718_020549.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">4 / 15</div>
+											<img src="assets/sketch/IMG_20160718_021118.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">5 / 15</div>
+											<img src="assets/sketch/IMG_20160811_125921.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">6 / 15</div>
+											<img src="assets/sketch/IMG_20170418_032122.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">7 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152550.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">8 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152701.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">9 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152714.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">10 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152739.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">11 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152752.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">12 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152853.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">13 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152912.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">14 / 15</div>
+											<img src="assets/sketch/IMG_20170506_152941.jpg" style="width:100%" />
+								</div>
+								
+								<div class="mySlides">
+									<div class="numbertext">15 / 15</div>
+											<img src="assets/sketch/IMG_20170506_153223.jpg" style="width:100%" />
+								</div>
+								
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>]
+							</div>
 					</div>
 				</div>
 				
@@ -175,6 +261,43 @@
 			};
 
 		changeBackground();
+		
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
 		</script>
 	</body>
 
