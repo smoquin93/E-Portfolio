@@ -8,6 +8,7 @@
 	/*border: 2px solid black;*/
 	position: relative;
 	top: 200px;
+	left: 200px;
 	margin: 0 auto;
 }
 
@@ -64,6 +65,7 @@
 .r_caption {
 	position: relative;
 	top: -160px;
+	left: -325px;
 	float: right;
 	color: #666;
 	font-style: italic;
