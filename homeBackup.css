@@ -22,7 +22,7 @@
 	float: left;
 	/*border: 2px solid black;*/
 	position: relative;
-	top: 200px;
+	top: 100px;
 	width: 600px;
 }
 
@@ -80,7 +80,7 @@
 
 #menu{
 	position: relative;
-	top: -450px;
+	top: -550px;
 	left: -300px;
 	float: right;
 	color: #81ab8f;
