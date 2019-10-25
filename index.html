@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<title>
-			Shannon Moquin's Portfolio
+			Shannon Fairbank's E-Portfolio | Home
 		</title>
-		
-		<!-- Main CSS is to all pages, home CSS is to the home page only -->
-		<link rel="stylesheet" type="text/css" href="mainBackup.css" />
-		<link rel="stylesheet" type="text/css" href="homeBackup.css" />
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script src="main.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="home01.css">
 	</head>
 	
 	<body>
-		
-		<div id="entirePage">
-		
-		<!-- Banner, logo, and horizontal line -->
-		
+		<header>
 			<div id="banner">
-				<img src="http://i.imgur.com/8CV9AdL.png" alt="Banner" class="banner-image" />
-				<hr class="banner-line" />
-				<img src="assets/logo.png" alt="Logo" class="banner-logo" />
+				<p>
+					-Shannon Fairbank's E-Portfolio-
+				</p>
 			</div>
-			
-			<div class="nav-holder">
-			&nbsp;
-			</div>
-			
-		<!-- Left Panel -->
+		</header>
 		
-			<div id="recentWorksPanel">
-			
-			<!-- "Recent Works" Title -->
-			
-				<div class="workTitle">
-					<p>Recent Works</p>
+<!-- --------------------- Banner --------------------- -->		
+
+		<nav>
+			<div id="nav-content">
+				<div id="logo">
+					<a href="index.html"><img src="~asset/logo.png" id="logodesign" /></a>
 				</div>
 				
-				<!-- Images of the artwork -->
-				
-				<div class="images">
-					<div>
-						<img id="imageWorks" class="slot1" src="assets/formerAstronomer.png" alt="Former Atronomer" />
-					</div>
-					<div>
-						<img id="imageWorks" class="slot2" src="assets/IcePrincess.png" alt="Kittens V Dragon" />
-					</div>
-					<div>
-						<img id="imageWorks" class="slot3" src="assets/Skunkie.png" alt="Skunkie" />
-					</div>
-					<img id="imageWorks" class="slot4" src="assets/LadyInSea.png" alt="God of Stars" />
+<!-- -------------------- Navigation ------------------ -->	
+		
+				<div id="navigation-list">
+					<ul>
+						<li>
+							<a href="Sketchbook/sketchbook.html">Sketchbook</a>
+						</li>
+						
+						<li>
+							<a href="Design/design.html">Concept Designs</a>
+						</li>
+						
+						<li>
+							<a href="Projects/projects.html">Personal Projects</a>
+						</li>
+						
+						<li>
+							<a href="Demo_Reel/demoreel.html">Demo Reel</a>
+						</li>
+						
+						<li>
+							<a href="About/about.html">About Me</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			
-			<!-- Vertical Border -->
-			
-			<div>
-				<img src="assets/v_border.png" alt="border" class="v_border" />
-			</div>
-			
-		<!-- Menu on the right hand side -->
-			
-			<div id="menu">
-				<ul>
-					<li>Home</li>
+		</nav>
+		
+<!-- --------------------- Body Content ----------------- -->
+		
+		<div id="main">
+			<article>
+				<div id="article-content">
 					<br />
-					<li class="menuLinks"><a href="arthome.html" onmouseover="myFunction()">Art</a></li>
 					<br />
-					<li class="menuLinks"><a href="animationhome.html">Animations</a></li>
-					<br />
-					<li class="menuLinks"><a href="courseworks.html">Course Works</a></li>
-					<br />
-					<li class="menuLinks"><a href="aboutme.html">About Me</a></li>
-					<br />
-				</ul>
-				
-				<div id="accounts">
-					<a href="http://spottedfire93.deviantart.com" target="_blank"><img src="assets/Deviantart-icon.png" alt="Deviant Art Icon" class="deviantart" /></a>
-					<a href="https://www.pinterest.com/spottedfire93/" target="_blank"><img src="assets/Pinterest_Favicon.png" alt="Pinterest Icon" class="pinterest" /></a>
+					
+					<div id="greeterCharacters">
+						<img src="~asset/Greeters/Mango.png" class="greeters" />
+					</div>
 				</div>
-			</div>
-			
-			<div id="commissionFormContents">
-				<span id="commissionFormCaption">Commission Sheet</span>
-				<img src="assets/commission-form.png" alt="Commission Form" id="commissionImage" />
-			</div>
-			
-			<div>
-				<img src="assets/h_border.png" alt="border" class="h_border" />
-			</div>
-			
-			<!-- Footer -->
-			
+			</article>
 			
 			<footer>
-				<p>Updated: 05/10/2017</p>
+				<hr />
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="arthome.html">Art</a></li>
-					<li><a href="animationhome.html">Animation</a></li>
-					<li><a href="courseworks.html">Course-Works</a></li>
-					<li><a href="aboutme.html">About-Me</a></li>
+					<li><a href="index.html">Home</a> | &nbsp;</li>
+					<li><a href="#">Sketchbook</a> | &nbsp;</li>
+					<li><a href="#">Concept Design</a> |&nbsp; </li>
+					<li><a href="#">Personal Projects</a> | &nbsp;</li>
+					<li><a href="#">Demo Reel </a> | &nbsp; </li>
+					<li><a href="#">About Me</a></li>
 				</ul>
-				<p>Created by Shannon Moquin</p>
+				<br />
+				<br />
+				<p id="update-footer">
+					Updated: xx/xx/xxxx
+				</p>
 			</footer>
+		
 		</div>
-		<script>
-		var colors = ['#f9feff', '#faf4ff', '#f9fff9'];
-
-			var changeBackground = function() {
-				document.body.style.background = colors[Math.floor(Math.random()*colors.length)];
-			};
-
-		changeBackground();
-		</script>
 	</body>
-
+	<script>
+	window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+  </script>
 </html>

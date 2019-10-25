@@ -1,5 +1,0 @@
-var colors = ['#ffb3b3','#99d6ff,'#ff99cc','#99ff99'];
-
-var divChange = function(){
-	document.div.style.background = colors[Math.floor(Math.random()*colors.length)];
-}
